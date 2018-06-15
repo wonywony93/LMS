@@ -4,6 +4,8 @@
     "http://struts.apache.org/dtds/struts-2.5.dtd">
     
     <struts>
+    
+    	<constant name="struts.action.extension" value="bit"></constant>
     	<package name="page1" namespace="/" extends="struts-default">
     	
     		<action name="main" class="com.bit.struts2.action.DefaultAction">
@@ -12,5 +14,5 @@
     		</action>
     	
     	</package>
-    
+    	<include file="struts-user1.xml"></include>
     </struts>
